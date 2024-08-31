@@ -46,6 +46,7 @@ All of them contain different sequences of commands that may contain pipelines, 
 Start Commands:
 
 Interactive Mode-
+
 ./mysh
         
 echo hello | ./mysh /dev/tty
