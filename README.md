@@ -39,13 +39,14 @@ Test Files:
     We test "then" and "else" commands following a failed and a successful command.
 
 Start Commands:
-Interactive Mode
+
+Interactive Mode-
         ./mysh
         echo hello | ./mysh /dev/tty
         These show a welcome message ("Welcome to my shell!"), the prompt "mysh> " so the user can write a new command and press enter, and the end message ("Exitng my shell.").
         The commands we inputted to test were the same as the one we hardcoded into the .sh files.
 
-Batch Mode
+Batch Mode-
         ./mysh myscript.sh
         cat test.sh | ./mysh
         ./mysh < test.sh
