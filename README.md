@@ -46,16 +46,21 @@ All of them contain different sequences of commands that may contain pipelines, 
 Start Commands:
 
 Interactive Mode-
-        ./mysh
-        echo hello | ./mysh /dev/tty
-        These show a welcome message ("Welcome to my shell!"), the prompt "mysh> " so the user can write a new command and press enter, and the end message ("Exitng my shell.").
-        The commands we inputted to test were the same as the one we hardcoded into the .sh files.
+./mysh
+        
+echo hello | ./mysh /dev/tty
+
+These show a welcome message ("Welcome to my shell!"), the prompt "mysh> " so the user can write a new command and press enter, and the end message ("Exitng my shell."). The commands we inputted to test were the same as the one we hardcoded into the .sh files.
 
 Batch Mode-
-        ./mysh myscript.sh
-        cat test.sh | ./mysh
-        ./mysh < test.sh
-        These use a specific .sh file and output the corresponding output based on the commands within that file.
+
+./mysh myscript.sh
+
+cat test.sh | ./mysh
+        
+./mysh < test.sh
+
+These use a specific .sh file and output the corresponding output based on the commands within that file.
 
 Limitations:
     When the shell encounters redirection and pipe commands, the shell has a memory leak caused potentially by the initialization of the arraylists we use to perform the left and right processes of the pipe. 
