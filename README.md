@@ -1,9 +1,4 @@
-Names and NetId: 
-
-Deeya Patel - dmp450
-Aditi Parekh - avp126
-
-Project III: My shell (mysh: Linux Shell)
+My Shell (mysh: Linux Shell)
 
 main()
     We determine whether or not the mode is interactive or batch using isatty() and retrieve the file descriptor of the correct file we want to read commands from.
