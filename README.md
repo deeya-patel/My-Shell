@@ -22,9 +22,13 @@ checkFirstArg() -
 For built-in commands: cd, pwd, which, exit
 
 Fork() was not used for these.
+
 cd(): takes in the argument inputted by the user and changes directory into it. 
+
 which(): uses the access() function to check if the user inputted argument exists in the given paths.
+
 pwd(): gets the current working directory based off of the user's cd command
+
 exit(): takes in the arraylist of arguments if any and prints those arguments, before exitting out of the shell. 
 
 To successfully use the then and else commands in our shell, we make use of a global variable that is set to 0 if a command is successful and 1 if the command fails. To determine whether or not to use the appropriate then/else command, a conditional is used to check if the exitstatus of the previously used command was successful or not. 
@@ -32,10 +36,12 @@ To successfully use the then and else commands in our shell, we make use of a gl
 Test Files:
 
 myscript.sh - Exits with exit command.
+
 test.sh - Exits with exit command and additional arguments.
+
 testing.sh - Exits because EOF is reached.
-All of them contain different sequences of commands that may contain pipelines, redirection, and wildcards and start with a built-in, bare name, pathname, or conditional.
-We test "then" and "else" commands following a failed and a successful command.
+
+All of them contain different sequences of commands that may contain pipelines, redirection, and wildcards and start with a built-in, bare name, pathname, or conditional. We test "then" and "else" commands following a failed and a successful command.
 
 Start Commands:
 
